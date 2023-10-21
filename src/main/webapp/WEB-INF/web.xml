@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID">
+	<display-name>CityHub_Hospital</display-name>
+	<servlet>
+		<description>
+		</description>
+		<display-name>DocterLogin</display-name>
+		<servlet-name>DocterLogin</servlet-name>
+		<servlet-class>com.docter.servlet.DocterLogin</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>DoctorLogout</display-name>
+		<servlet-name>DoctorLogout</servlet-name>
+		<servlet-class>com.docter.servlet.DoctorLogout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DocterLogin</servlet-name>
+		<url-pattern>/DocterLogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DoctorLogout</servlet-name>
+		<url-pattern>/DoctorLogout</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
